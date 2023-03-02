@@ -28,7 +28,7 @@ if direction == "L":
     question = input("You will rather Swim 'S' or Wait 'W'?\n")
 
     if question == "W":
-        door = input("Which door color you will choose? 'R' Red, 'B' Blue, 'Y' Yellow 'G' Green\n")
+        door = input("Which door color you will choose? 'R' Red, 'B' Blue, 'Y' Yellow\n")
         if door == "R":
             print("Burned by fire.\nGame Over.")
         elif door == "B":
