@@ -36,9 +36,10 @@ def get_love(name1, name2):
 
 score = get_love(name1, name2)
 
-if 10 > score > 90:
-    print(f"You score is {score}, you go together like coke and mentos.")
+
+if score < 10 or score > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
 elif 40 <= score <= 50:
-    print(f"Your score is {score}, you are all right together.")
+    print(f"Your score is {score}, you are alright together.")
 else:
     print(f"Your score is {score}.")
