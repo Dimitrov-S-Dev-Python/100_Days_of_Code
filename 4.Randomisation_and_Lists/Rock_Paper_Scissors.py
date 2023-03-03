@@ -38,8 +38,8 @@ print(f"Your pick:\n{for_print[user_pick]}")
 print(f"Computer pick:\n{for_print[comp_pick]}")
 
 if user_pick == 0 and comp_pick == 2 or user_pick == 2 and comp_pick == 1:
-    print("YOU WON!!!")
+    print("You won!!!")
 elif user_pick == comp_pick:
-    print("Game Tide!!!")
+    print("It is a draw!!!")
 else:
-    print("YOU LOST !!!")
+    print("You lost!!!")
