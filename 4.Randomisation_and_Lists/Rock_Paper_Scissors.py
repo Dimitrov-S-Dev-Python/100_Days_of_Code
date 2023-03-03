@@ -1,3 +1,5 @@
+import random
+
 rock = '''
     _______
 ---'   ____)
@@ -27,3 +29,17 @@ scissors = '''
 
 # Write your code below this line 👇
 
+print("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
+user_pick = int(input())
+comp_pick = random.randint(0, 2)
+for_print = [rock, paper, scissors]
+
+print(f"Your pick:\n{for_print[user_pick]}")
+print(f"Computer pick:\n{for_print[comp_pick]}")
+
+if user_pick == 0 and comp_pick == 2 or user_pick == 2 and comp_pick == 1:
+    print("YOU WON!!!")
+elif user_pick == comp_pick:
+    print("Game Tide!!!")
+else:
+    print("YOU LOST !!!")
